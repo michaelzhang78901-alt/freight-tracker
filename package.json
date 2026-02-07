@@ -1,0 +1,35 @@
+{
+  "name": "freight-rate-tracker",
+  "version": "1.0.0",
+  "description": "Real-time container freight rate differential tracker for Shanghai-LA vs Shanghai-Rotterdam routes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scrape": "node fbx_scraper.js",
+    "dev": "nodemon server.js",
+    "test-scrape": "node fbx_scraper.js"
+  },
+  "keywords": [
+    "freight",
+    "shipping",
+    "FBX",
+    "container",
+    "rates",
+    "scraper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
